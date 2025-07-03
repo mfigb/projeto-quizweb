@@ -164,6 +164,10 @@ node server.js
 
 http://localhost:3000
 
+## 📝 Licença
+Projeto acadêmico desenvolvido para fins de aprendizado.
+Criado por Mônica Figueirôa, 2025.
+
 
 
 
