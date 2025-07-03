@@ -1,0 +1,146 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center; /* centraliza o texto */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 50px auto;
+    background-color: rgb(168, 202, 231);
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(45, 98, 142, 1);
+}
+
+/* Títulos */
+h1, h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Explicação do quiz */
+.explanation {
+    margin-top: 20px;
+    text-align: justify;
+    white-space: pre-line;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    padding: 13px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* === COMPONENTES === */
+
+/* Botões genéricos */
+.btn {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #c9def1;
+}
+
+/* Botão de próxima */
+#next-button {
+    margin-top: 20px;
+}
+
+/* Opções */
+.options {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+.option-button {
+    padding: 10px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.option-button:hover {
+    background-color: #c9def1;
+}
+
+/* Campo de entrada (nome) */
+input {
+    padding: 8px;
+    width: 70%;
+    margin-top: 10px;
+}
+
+/* Tabela (ranking/resultados) */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #aaa;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #ddd;
+}
+
+/* Cores para respostas */
+.correct {
+    color: #43eb1d;
+    font-weight: bold;
+}
+
+.incorrect {
+    color: red;
+    font-weight: bold;
+}
+
+/* Responsividade para telas menores */
+@media screen and (max-width: 600px) {
+    .container {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    h1, h2 {
+        font-size: 1.1em;
+        text-align: center;
+    }
+
+    .option-button {
+        font-size: 0.9em;
+    }
+
+    .explanation {
+        font-size: 0.9em;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
