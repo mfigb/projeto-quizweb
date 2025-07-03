@@ -16,8 +16,8 @@ const port = 3000;
  */
 const connection = mysql.createConnection({
     host: 'localhost',
-    user: 'mfigb',
-    password: 'jecamyca12',
+    user: 'XXXX',
+    password: '12345',
     database: 'quizweb'
 });
 
