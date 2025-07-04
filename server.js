@@ -15,10 +15,10 @@ const port = 3000;
  * As credenciais devem ser ajustadas conforme o ambiente.
  */
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'XXXX',
-    password: '12345',
-    database: 'quizweb'
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME
 });
 
 /* Conexão com o banco de dados MySQL
