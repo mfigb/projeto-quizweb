@@ -105,8 +105,8 @@ A aplicação é composta por um servidor Node.js com Express e um banco de dado
 
 ### 📥 Carregamento de Perguntas
 
-- Perguntas obtidas via requisição:
-- Resposta retorna as perguntas da tabela `questions` em formato JSON.
+- As perguntas são obtidas via requisição HTTP GET para o backend (servidor Node.js), que consulta o banco de dados MySQL, recupera os dados da tabela questions e retorna uma resposta em formato JSON contendo as perguntas ao frontend.
+
 
 ### 🧠 Execução do Quiz
 
