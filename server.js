@@ -8,7 +8,8 @@ const cors = require('cors');
 const path = require('path');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
+
 
 /* Configuração do banco de dados MySQL
  * O banco de dados e as tabelas devem estar criados conforme o esquema fornecido.
