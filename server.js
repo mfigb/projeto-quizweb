@@ -8,18 +8,17 @@ const cors = require('cors');
 const path = require('path');
 
 const app = express();
-const port = process.env.PORT || 3000;
-
+const port = 3000;
 
 /* Configuração do banco de dados MySQL
  * O banco de dados e as tabelas devem estar criados conforme o esquema fornecido.
  * As credenciais devem ser ajustadas conforme o ambiente.
  */
 const connection = mysql.createConnection({
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_NAME
+    host: 'localhost',
+    user: 'mfigb',
+    password: 'jecamyca12',
+    database: 'quizweb'
 });
 
 /* Conexão com o banco de dados MySQL
